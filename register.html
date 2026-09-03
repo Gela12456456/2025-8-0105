@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 
 <html>
@@ -12,6 +11,7 @@
 </head>
 
 <body>
+
 
 <div class="register-page">
 
@@ -30,8 +30,11 @@
             <input type="password" id="password" placeholder="Password" required>
 
             <button type="submit">REGISTER</button>
-        <a href="forgot-password.html">Forgot Password?</a>  
-        </form>
+        
+        
+            <a href="forgot-password.html">Forgot Password?</a>  
+       
+            </form>
 
         <a class="back-home" href="index.html">
             BACK
@@ -41,31 +44,15 @@
 
 </div>
 
+
+
 <footer>
     <p>@ 2026 Gelacso Travel & Tours. All Rights Reserved.</p>
 </footer>
 
 
-<script>
-
-function register(event) {
-
-    event.preventDefault();
-
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-
-    localStorage.setItem("username", username);
-    localStorage.setItem("password", password);
-
-    alert("Registration successful!");
-
-    window.location.href = "login.html";
-}
-
-</script>
-
 </body>
 
 </html>
-```
+
+
