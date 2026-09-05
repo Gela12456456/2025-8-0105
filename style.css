@@ -106,9 +106,6 @@ color: black;
 border-color: #20d0d7;
 }
 
-/* =========================
-LOGIN SECTION
-========================= */
 
 .login-page {
 min-height: 100vh;
@@ -126,7 +123,7 @@ padding: 20px;
 
 }
 
-/* LOGIN BOX */
+
 
 .login-box {
 width: 400px;
@@ -137,7 +134,6 @@ text-align: center;
 color: white;
 }
 
-/* LOGIN TITLE */
 
 .login-box h1 {
 margin-bottom: 30px;
@@ -160,7 +156,7 @@ font-family: 'Poppins', sans-serif;
 
 }
 
-/* LOGIN BUTTON */
+
 
 .login-box button {
 width: 100%;
@@ -182,7 +178,7 @@ font-weight: bold;
 background: white;
 }
 
-/* LOGIN LINKS */
+
 
 .login-box p {
 margin-top: 20px;
@@ -198,9 +194,6 @@ display: inline-block;
 margin-top: 20px;
 }
 
-/* =========================
-REGISTER SECTION
-========================= */
 
 .register-page {
 min-height: 100vh;
@@ -218,7 +211,7 @@ padding: 20px;
 
 }
 
-/* REGISTER BOX */
+
 
 .register-box {
 width: 450px;
@@ -233,7 +226,7 @@ color: white;
 
 }
 
-/* REGISTER TITLE */
+
 
 .register-box h1 {
 margin: 0 0 15px 0;
@@ -241,7 +234,7 @@ font-size: 40px;
 font-family: 'Playfair Display', serif;
 }
 
-/* REGISTER INPUTS */
+
 
 .register-box input {
 width: 100%;
@@ -256,7 +249,7 @@ font-family: 'Poppins', sans-serif;
 
 }
 
-/* REGISTER BUTTON */
+
 
 .register-box button {
 width: 100%;
@@ -295,9 +288,6 @@ text-decoration: none;
 text-decoration: underline;
 }
 
-/* =========================
-FOOTER SECTION
-========================= */
 
 footer {
 position: fixed;
