@@ -1,3 +1,6 @@
+/* =========================
+GLOBAL
+========================= */
 
 * {
   margin: 0;
@@ -6,19 +9,23 @@
   font-family: 'Poppins', sans-serif;
   }
 
-body {
+
+
+.section1 {
 background-image: url("el nido.jpeg");
 background-size: cover;
 background-position: center;
-height: 100vh;
+min-height: 100vh;
 }
-
-/* HOME PAGE */
 
 .hero {
 height: 100vh;
 background: rgba(0, 0, 0, 0.40);
 }
+
+
+
+/* NAVIGATION */
 
 nav {
 height: 100px;
@@ -27,6 +34,8 @@ justify-content: space-between;
 align-items: center;
 padding: 90px;
 }
+
+/* LOGO */
 
 .logo {
 display: flex;
@@ -43,6 +52,8 @@ color: white;
 font-size: 35px;
 }
 
+/* NAV LINKS */
+
 .nav-links a {
 color: white;
 text-decoration: none;
@@ -53,6 +64,8 @@ font-size: 15px;
 .nav-links a:hover {
 color: #20d0d7;
 }
+
+/* HOME CONTENT */
 
 .content {
 color: white;
@@ -78,6 +91,8 @@ line-height: 1.6;
 margin-top: 20px;
 }
 
+/* LEARN MORE BUTTON */
+
 .learn {
 display: inline-block;
 margin-top: 25px;
@@ -94,36 +109,27 @@ color: black;
 border-color: #20d0d7;
 }
 
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  }
-
-body {
-background-image: url("el nido.jpeg");
-background-size: cover;
-background-position: center;
-height: 100vh;
-}
-
-
+/* =========================
+LOGIN SECTION
+========================= */
 
 .login-page {
 min-height: 100vh;
 background-image: url("el nido.jpeg");
 background-size: cover;
 background-position: center;
+
+
 display: flex;
 justify-content: center;
 align-items: center;
+
 padding: 20px;
+
+
 }
 
-
+/* LOGIN BOX */
 
 .login-box {
 width: 400px;
@@ -134,35 +140,52 @@ text-align: center;
 color: white;
 }
 
+/* LOGIN TITLE */
+
 .login-box h1 {
 margin-bottom: 30px;
 font-size: 40px;
 font-family: 'Playfair Display', serif;
 }
 
+/* LOGIN INPUTS */
+
 .login-box input {
 width: 100%;
 padding: 15px;
 margin: 10px 0;
+
 border: none;
 border-radius: 5px;
+
 font-family: 'Poppins', sans-serif;
+
+
 }
+
+/* LOGIN BUTTON */
 
 .login-box button {
 width: 100%;
 padding: 15px;
 margin-top: 15px;
+
+
 border: none;
 border-radius: 5px;
+
 background: #20d0d7;
 cursor: pointer;
 font-weight: bold;
+
+
 }
 
 .login-box button:hover {
 background: white;
 }
+
+/* LOGIN LINKS */
 
 .login-box p {
 margin-top: 20px;
@@ -178,76 +201,122 @@ display: inline-block;
 margin-top: 20px;
 }
 
-
+/* =========================
+REGISTER SECTION
+========================= */
 
 .register-page {
 min-height: 100vh;
+
 background-image: url("el nido.jpeg");
 background-size: cover;
 background-position: center;
+
 display: flex;
 justify-content: center;
 align-items: center;
+
 padding: 20px;
+
+
 }
+
+/* REGISTER BOX */
 
 .register-box {
-width: 400px;
-padding: 40px;
+width: 450px;
+padding: 25px;
+
 background: rgba(0, 0, 0, 0.60);
 border-radius: 10px;
+
 text-align: center;
 color: white;
+
+
 }
 
+/* REGISTER TITLE */
+
 .register-box h1 {
-margin-bottom: 30px;
+margin: 0 0 15px 0;
 font-size: 40px;
 font-family: 'Playfair Display', serif;
 }
+
+/* REGISTER INPUTS */
 
 .register-box input {
 width: 100%;
 padding: 15px;
 margin: 10px 0;
+
+
 border: none;
 border-radius: 5px;
+
 font-family: 'Poppins', sans-serif;
+
 }
+
+/* REGISTER BUTTON */
 
 .register-box button {
 width: 100%;
 padding: 15px;
 margin-top: 15px;
+
+
 border: none;
 border-radius: 5px;
+
 background: #20d0d7;
 cursor: pointer;
 font-weight: bold;
+
+
 }
 
 .register-box button:hover {
 background: white;
 }
 
+/* REGISTER TEXT */
+
 .register-box p {
 margin-top: 20px;
 }
+
+/* LOGIN LINK */
 
 .register-box a {
 color: #20d0d7;
 text-decoration: none;
 }
 
+.register-box a:hover {
+text-decoration: underline;
+}
+
+/* =========================
+FOOTER SECTION
+========================= */
 
 footer {
 position: fixed;
 bottom: 0;
 left: 0;
+
+
 width: 100%;
 padding: 15px;
+
 text-align: center;
+
 background: rgba(0, 0, 0, 0.60);
 color: white;
+
 font-size: 14px;
+
+
 }
