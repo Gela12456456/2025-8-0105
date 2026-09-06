@@ -165,7 +165,7 @@ nav {
 
 
 
-/* TOUR CONTAINER */
+
 
 .tours .tour-container {
     display: grid;
@@ -184,14 +184,6 @@ nav {
     box-shadow: 0 5px 20px rgba(22, 40, 63, 0.12);
     transition: 0.3s ease;
 }
-
-
-.tours .tour-card:hover {
-    transform: translateY(-8px);
-}
-
-
-
 
 
 .tours .tour-card img {
@@ -333,9 +325,6 @@ nav {
 
 
 
-/* =========================
-   REGISTER
-========================= */
 
 .register-page {
     min-height: 50vh;
