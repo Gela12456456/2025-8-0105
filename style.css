@@ -431,4 +431,159 @@ font-size: 14px;
 }
 
 
+.learn-page {
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.learn-box {
+    width: 400px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.60);
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+
+.learn-box h1 {
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.learn-box button:hover {
+    background: white;
+}
+
+
+.learn-box p {
+    margin-top: 20px;
+}
+
+
+.learn-box a {
+    color: #20d0d7;
+    text-decoration: none;
+}
+
+
+.back-btn {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0;
+    padding: 10px 25px;
+    color: rgb(28, 119, 158);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+footer {
+position: fixed;
+bottom: 0;
+left: 0;
+
+
+width: 100%;
+padding: 15px;
+
+text-align: center;
+
+background: rgba(0, 0, 0, 0.60);
+color: white;
+
+font-size: 14px;
+
+
+}
+
+
+
+
+
+.contact-page {
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.contact-box {
+    width: 400px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.60);
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+.contact-box button:hover {
+    background: white;
+}
+
+
+.contact-box p {
+    margin-top: 20px;
+}
+
+
+.contact-box a {
+    color: #20d0d7;
+    text-decoration: none;
+}
+
+
+.back-btn {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0;
+    padding: 10px 25px;
+    color: rgb(28, 119, 158);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+footer {
+position: fixed;
+bottom: 0;
+left: 0;
+
+
+width: 100%;
+padding: 15px;
+
+text-align: center;
+
+background: rgba(0, 0, 0, 0.60);
+color: white;
+
+font-size: 14px;
+
+
+}
+
+
 
