@@ -1,9 +1,11 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 
 .section1 {
     background-image: url("el nido.jpeg");
@@ -31,7 +33,6 @@
 }
 
 
-
 .about-content {
     width: 90%;
     max-width: 1100px;
@@ -43,9 +44,11 @@
     gap: 70px;
 }
 
+
 .about-text {
     width: 50%;
 }
+
 
 .about-text h2 {
     font-size: 45px;
@@ -53,6 +56,7 @@
 
     margin-bottom: 25px;
 }
+
 
 .about-text p {
     font-size: 18px;
@@ -64,10 +68,10 @@
 }
 
 
-
 .about-image {
     width: 50%;
 }
+
 
 .about-image img {
     width: 100%;
@@ -78,10 +82,13 @@
     transition: 0.4s;
 }
 
+*/
+
 .hero {
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.40);
 }
+
 
 
 .logo {
@@ -110,6 +117,7 @@ nav {
     padding: 90px;
 }
 
+
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -117,9 +125,11 @@ nav {
     font-size: 15px;
 }
 
+
 .nav-links a:hover {
     color: #20d0d7;
 }
+
 
 .index {
     color: white;
@@ -127,16 +137,19 @@ nav {
     margin-top: 170px;
 }
 
+
 .index h1 {
     font-family: 'Playfair Display', serif;
     font-size: 65px;
     line-height: 1.1;
 }
 
+
 .index span {
     color: #20d0d7;
     font-family: 'Playfair Display', serif;
 }
+
 
 .index p {
     width: 500px;
@@ -151,9 +164,11 @@ nav {
     margin-top: 25px;
     padding: 12px 25px;
     color: white;
+    border: 1px solid white;
     text-decoration: none;
     transition: 0.3s;
 }
+
 
 .learn:hover {
     background: #20d0d7;
@@ -161,11 +176,14 @@ nav {
     border-color: #20d0d7;
 }
 
+
+
 .tours {
     position: relative;
     z-index: 1;
     padding: 0;
 }
+
 
 .tours .tours-title {
     text-align: center;
@@ -193,6 +211,7 @@ nav {
     max-width: 1400px;
     margin: auto;
 }
+
 
 .tours .tour-card {
     background-color: #ffffff;
@@ -223,7 +242,6 @@ nav {
 }
 
 
-
 .tours .tour-info p {
     color: #3d5470;
     font-size: 14px;
@@ -240,8 +258,8 @@ nav {
     background-color: #5fa8d3;
     color: #ffffff;
     font-size: 15px;
-    
 }
+
 
 
 .login-page {
@@ -299,6 +317,7 @@ nav {
     font-weight: bold;
 }
 
+
 .login-box p {
     margin-top: 20px;
 }
@@ -308,6 +327,8 @@ nav {
     color: #20d0d7;
     text-decoration: none;
 }
+
+
 
 
 .register-page {
@@ -365,6 +386,7 @@ nav {
     font-weight: bold;
 }
 
+
 .register-box p {
     margin-top: 20px;
 }
@@ -374,6 +396,7 @@ nav {
     color: #20d0d7;
     text-decoration: none;
 }
+
 
 
 
@@ -388,6 +411,7 @@ nav {
 
     padding: 20px;
 }
+
 
 .learn-box p {
     margin-top: 20px;
@@ -423,11 +447,11 @@ nav {
 }
 
 
+
 .back-home {
     display: inline-block;
     margin-top: 20px;
 }
-
 
 
 .back-btn {
@@ -444,16 +468,14 @@ nav {
 
 
 footer {
-position: fixed;
-bottom: 0;
-left: 0;
-width: 100%;
-padding: 15px;
-text-align: center;
-background: rgba(0, 0, 0, 0.60);
-color: white;
-font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.60);
+    color: white;
+    font-size: 14px;
 }
-
-
 
