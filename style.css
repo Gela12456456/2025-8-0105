@@ -32,11 +32,11 @@
     width: 200px;
 }
 
-
 .logo h2 {
     color: white;
     font-size: 35px;
 }
+
 
 
 nav {
@@ -54,12 +54,6 @@ nav {
     margin-left: 25px;
     font-size: 15px;
 }
-
-
-.nav-links a:hover {
-    color: #20d0d7;
-}
-
 
 
 .index {
@@ -88,24 +82,6 @@ nav {
     line-height: 1.6;
     margin-top: 20px;
 }
-
-
-.learn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 25px;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-
-.learn:hover {
-    background: #20d0d7;
-    color: black;
-    border-color: #20d0d7;
-}
-
 
 
 .tours {
@@ -346,6 +322,15 @@ nav {
     padding: 20px;
 }
 
+.learn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
 
 .contact-box {
     width: 400px;
@@ -361,6 +346,9 @@ nav {
     color: #20d0d7;
     text-decoration: none;
 }
+
+
+
 
 .back-home {
     display: inline-block;
@@ -392,3 +380,30 @@ footer {
     color: white;
     font-size: 14px;
 }
+
+
+
+/* =========================
+   ADMIN DASHBOARD
+========================= */
+
+
+.admin-page {
+
+    min-height: 80vh;
+
+    padding: 40px 60px;
+
+}
+
+
+.admin-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+
