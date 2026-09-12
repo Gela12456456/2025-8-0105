@@ -402,6 +402,8 @@ footer {
 }
 
 
+
+
 .admin-welcome {
 
     display: flex;
@@ -462,7 +464,7 @@ footer {
 
 
 
-
+/* SUMMARY */
 
 .summary-container {
 
@@ -493,6 +495,7 @@ footer {
     gap: 15px;
 
 }
+
 
 .summary-icon {
 
@@ -594,7 +597,7 @@ footer {
 
 
 
-/* TOUR ROW */
+
 
 .tour-row {
 
@@ -702,7 +705,7 @@ footer {
 
 
 
-
+/* BOOKINGS */
 
 .booking-row {
 
@@ -843,6 +846,8 @@ footer {
     color: #20d0d7;
 
 }
+
+
 
 
 
