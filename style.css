@@ -858,3 +858,19 @@ footer {
     font-weight: bold;
 
 }
+
+.already-account {
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.already-account a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.already-account a:hover {
+    text-decoration: underline;
+}
