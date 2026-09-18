@@ -40,7 +40,7 @@
 
                 <h1>REGISTER IN HERE</h1>
 
-                <form onsubmit="login(event)">
+                <form onsubmit="register(event)">
 
                     <input type="text" placeholder="Full Name">
 
@@ -76,6 +76,12 @@
         </p>
 
     </footer>
+
+    <script> function register(event) { 
+        event.preventDefault(); 
+       window.location.href = "home.html";
+    } 
+    </script>
 
 </body>
 
