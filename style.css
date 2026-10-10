@@ -1506,3 +1506,129 @@ body {
         height: 210px;
     }
 }
+```css
+/* HOME PAGE HEADER */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 5%;
+    background: transparent;
+}
+
+.home-logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.home-logo img {
+    display: block;
+    width: 130px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.home-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.home-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.home-nav a:hover {
+    color: #20d0d7;
+}
+
+
+.home-section {
+    min-height: 100vh;
+    padding: 45px 35px 40px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(10, 39, 56, 0.96) 0%,
+            rgba(28, 100, 125, 0.90) 50%,
+            rgba(15, 54, 75, 0.96) 100%
+        );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 600px) {
+    .home-header {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    .home-logo img {
+        width: 110px;
+    }
+
+    .home-nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home-nav a {
+        font-size: 13px;
+    }
+
+    .home-section {
+        padding: 30px 16px;
+    }
+}
+
+/* GELACSO HOME LOGO */
+
+.home-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.home-logo img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    display: block;
+}
+
+.home-logo span {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Mobile logo */
+@media (max-width: 600px) {
+    .home-logo {
+        gap: 8px;
+    }
+
+    .home-logo img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .home-logo span {
+        font-size: 19px;
+        white-space: normal;
+    }
+}

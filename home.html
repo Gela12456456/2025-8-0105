@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,40 +6,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gelacso Travel & Tours | Available Tours</title>
+    <title>Gelacso Travel & Tours</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-    <header class="home-header">
-    <a href="home.html" class="home-logo">
-        <img src="logo.png" alt="Gelacso Travel and Tours Logo">
-    </a>
 
-    <nav class="home-nav">
-        <a href="home.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-</header>
+          
+        </header>
+
+    </section>
 
     <main>
 
         <section class="home-section" id="home">
 
-            <div class="tours">
-
-                <div class="tours-title">
-                    <h2>Our Available Tours</h2>
-                    <p>Choose your next adventure with Gelacso Travel &amp; Tours.</p>
-                </div>
-
+            
                 <div class="tour-container">
 
                     <!-- TOUR A -->
-                    <article class="tour-card">
+                    <div class="tour-card">
 
                         <div class="tour-image-placeholder">
                             <span>TOUR A PHOTO</span>
@@ -75,14 +63,15 @@
                                 </ul>
                             </div>
 
-                            <button type="button" onclick="goToSection('tourA')">
+                            <button onclick="goToSection('tourA')">
                                 View Tour
                             </button>
                         </div>
-                    </article>
+
+                    </div>
 
                     <!-- TOUR B -->
-                    <article class="tour-card">
+                    <div class="tour-card">
 
                         <div class="tour-image-placeholder">
                             <span>TOUR B PHOTO</span>
@@ -90,11 +79,11 @@
 
                         <div class="tour-info">
                             <h3>TOUR B</h3>
-                            <h4>Lagoon &amp; Beach Escape</h4>
+                            <h4>Island Hopping Adventure</h4>
 
                             <p>
-                                Enjoy a relaxing island adventure surrounded
-                                by beautiful lagoons and beaches.
+                                Discover scenic islands, hidden beaches,
+                                and beautiful coastal views with Tour B.
                             </p>
 
                             <div class="home-price">
@@ -119,14 +108,15 @@
                                 </ul>
                             </div>
 
-                            <button type="button" onclick="goToSection('tourB')">
+                            <button onclick="goToSection('tourB')">
                                 View Tour
                             </button>
                         </div>
-                    </article>
+
+                    </div>
 
                     <!-- TOUR C -->
-                    <article class="tour-card">
+                    <div class="tour-card">
 
                         <div class="tour-image-placeholder">
                             <span>TOUR C PHOTO</span>
@@ -134,11 +124,11 @@
 
                         <div class="tour-info">
                             <h3>TOUR C</h3>
-                            <h4>El Nido Exploration</h4>
+                            <h4>Island Hopping Adventure</h4>
 
                             <p>
-                                Discover the natural beauty of El Nido
-                                and its breathtaking scenery.
+                                Enjoy a memorable island adventure surrounded
+                                by the natural beauty of El Nido.
                             </p>
 
                             <div class="home-price">
@@ -163,14 +153,15 @@
                                 </ul>
                             </div>
 
-                            <button type="button" onclick="goToSection('tourC')">
+                            <button onclick="goToSection('tourC')">
                                 View Tour
                             </button>
                         </div>
-                    </article>
+
+                    </div>
 
                     <!-- TOUR D -->
-                    <article class="tour-card">
+                    <div class="tour-card">
 
                         <div class="tour-image-placeholder">
                             <span>TOUR D PHOTO</span>
@@ -178,11 +169,11 @@
 
                         <div class="tour-info">
                             <h3>TOUR D</h3>
-                            <h4>Palawan Adventure</h4>
+                            <h4>Island Hopping Adventure</h4>
 
                             <p>
-                                Experience more of Palawan through an
-                                exciting and unforgettable adventure.
+                                Experience the peaceful waters and tropical
+                                scenery of El Nido with Tour D.
                             </p>
 
                             <div class="home-price">
@@ -207,18 +198,18 @@
                                 </ul>
                             </div>
 
-                            <button type="button" onclick="goToSection('tourD')">
+                            <button onclick="goToSection('tourD')">
                                 View Tour
                             </button>
                         </div>
-                    </article>
+
+                    </div>
 
                 </div>
 
                 <p class="home-fee-note">
-                    Note: The price is ₱1,500 per person.
-                    Lagoon fees and environmental fees are excluded
-                    and must be paid separately.
+                    Note: Lagoon fees and environmental fees are not included
+                    in the tour package price and must be paid separately.
                 </p>
 
             </div>
@@ -227,11 +218,14 @@
 
     </main>
 
-    <script>
-        function goToSection(sectionId) {
-            window.location.href = sectionId + ".html";
-        }
-    </script>
+    <footer>
+        <p>
+            @ 2026 Gelacso Travel &amp; Tours. All Rights Reserved.
+        </p>
+    </footer>
+
+
 
 </body>
+
 </html>
