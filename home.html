@@ -1,307 +1,226 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gelacso Travel & Tours</title>
+    <title>Gelacso Travel & Tours | Available Tours</title>
 
     <link rel="stylesheet" href="style.css">
-    <div class="inclusions">
-    <strong>INCLUSIONS</strong>
-    <ul>
-        <li>Lunch</li>
-        <li>Licensed Boat</li>
-        <li>Guide</li>
-    </ul>
-</div>
-
-<div class="exclusions">
-    <strong>EXCLUSIONS</strong>
-    <ul>
-        <li>Lagoon Fee</li>
-        <li>Envi Fee</li>
-    </ul>
-</div>
 
 </head>
 
-
 <body>
 
+    <main>
 
-<section class="home-section" id="home">
-    
+        <section class="home-section" id="home">
 
-    <div class="logo">
+            <div class="tours">
 
-        <img src="gelacso.png">
+                <div class="tours-title">
+                    <h2>Our Available Tours</h2>
+                    <p>Choose your next adventure with Gelacso Travel &amp; Tours.</p>
+                </div>
 
-        <h2>
-            GELACSO TRAVEL & TOURS
-        </h2>
+                <div class="tour-container">
 
-    </div>
+                    <!-- TOUR A -->
+                    <article class="tour-card">
 
+                        <div class="tour-image-placeholder">
+                            <span>TOUR A PHOTO</span>
+                        </div>
 
-    <div class="tours">
+                        <div class="tour-info">
+                            <h3>TOUR A</h3>
+                            <h4>Island Hopping Adventure</h4>
 
-        <div class="tours-title">
+                            <p>
+                                Explore beautiful islands, crystal-clear waters,
+                                and amazing beaches with Tour A.
+                            </p>
 
-            <h2>Our Available Tours</h2>
+                            <div class="home-price">
+                                <span>PRICE PER PERSON</span>
+                                <strong>₱1,500</strong>
+                            </div>
 
-            <p>
-                Choose your next adventure with Gelacso Travel & Tours.
-            </p>
+                            <div class="inclusions">
+                                <strong>INCLUSIONS</strong>
+                                <ul>
+                                    <li>Lunch</li>
+                                    <li>Licensed Boat</li>
+                                    <li>Tour Guide</li>
+                                </ul>
+                            </div>
 
-        </div>
+                            <div class="exclusions">
+                                <strong>EXCLUSIONS</strong>
+                                <ul>
+                                    <li>Lagoon Fee</li>
+                                    <li>Environmental Fee</li>
+                                </ul>
+                            </div>
 
+                            <button type="button" onclick="goToSection('tourA')">
+                                View Tour
+                            </button>
+                        </div>
+                    </article>
 
-        <div class="tour-container">
+                    <!-- TOUR B -->
+                    <article class="tour-card">
 
+                        <div class="tour-image-placeholder">
+                            <span>TOUR B PHOTO</span>
+                        </div>
 
-          
+                        <div class="tour-info">
+                            <h3>TOUR B</h3>
+                            <h4>Lagoon &amp; Beach Escape</h4>
 
-            <div class="tour-card">
+                            <p>
+                                Enjoy a relaxing island adventure surrounded
+                                by beautiful lagoons and beaches.
+                            </p>
 
-                <img src="sevencommando.png">
+                            <div class="home-price">
+                                <span>PRICE PER PERSON</span>
+                                <strong>₱1,500</strong>
+                            </div>
 
-                <div class="tour-info">
+                            <div class="inclusions">
+                                <strong>INCLUSIONS</strong>
+                                <ul>
+                                    <li>Lunch</li>
+                                    <li>Licensed Boat</li>
+                                    <li>Tour Guide</li>
+                                </ul>
+                            </div>
 
-                    <h3>TOUR A</h3>
+                            <div class="exclusions">
+                                <strong>EXCLUSIONS</strong>
+                                <ul>
+                                    <li>Lagoon Fee</li>
+                                    <li>Environmental Fee</li>
+                                </ul>
+                            </div>
 
-                    <h4>Island Hopping Adventure</h4>
+                            <button type="button" onclick="goToSection('tourB')">
+                                View Tour
+                            </button>
+                        </div>
+                    </article>
 
-                    <p>
-                        Explore beautiful islands, crystal-clear
-                        waters, and amazing beaches with Tour A.
-                    </p>
+                    <!-- TOUR C -->
+                    <article class="tour-card">
 
-                    <button onclick="goToSection('tourA')">
-                        View Tour
-                    </button>
+                        <div class="tour-image-placeholder">
+                            <span>TOUR C PHOTO</span>
+                        </div>
+
+                        <div class="tour-info">
+                            <h3>TOUR C</h3>
+                            <h4>El Nido Exploration</h4>
+
+                            <p>
+                                Discover the natural beauty of El Nido
+                                and its breathtaking scenery.
+                            </p>
+
+                            <div class="home-price">
+                                <span>PRICE PER PERSON</span>
+                                <strong>₱1,500</strong>
+                            </div>
+
+                            <div class="inclusions">
+                                <strong>INCLUSIONS</strong>
+                                <ul>
+                                    <li>Lunch</li>
+                                    <li>Licensed Boat</li>
+                                    <li>Tour Guide</li>
+                                </ul>
+                            </div>
+
+                            <div class="exclusions">
+                                <strong>EXCLUSIONS</strong>
+                                <ul>
+                                    <li>Lagoon Fee</li>
+                                    <li>Environmental Fee</li>
+                                </ul>
+                            </div>
+
+                            <button type="button" onclick="goToSection('tourC')">
+                                View Tour
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- TOUR D -->
+                    <article class="tour-card">
+
+                        <div class="tour-image-placeholder">
+                            <span>TOUR D PHOTO</span>
+                        </div>
+
+                        <div class="tour-info">
+                            <h3>TOUR D</h3>
+                            <h4>Palawan Adventure</h4>
+
+                            <p>
+                                Experience more of Palawan through an
+                                exciting and unforgettable adventure.
+                            </p>
+
+                            <div class="home-price">
+                                <span>PRICE PER PERSON</span>
+                                <strong>₱1,500</strong>
+                            </div>
+
+                            <div class="inclusions">
+                                <strong>INCLUSIONS</strong>
+                                <ul>
+                                    <li>Lunch</li>
+                                    <li>Licensed Boat</li>
+                                    <li>Tour Guide</li>
+                                </ul>
+                            </div>
+
+                            <div class="exclusions">
+                                <strong>EXCLUSIONS</strong>
+                                <ul>
+                                    <li>Lagoon Fee</li>
+                                    <li>Environmental Fee</li>
+                                </ul>
+                            </div>
+
+                            <button type="button" onclick="goToSection('tourD')">
+                                View Tour
+                            </button>
+                        </div>
+                    </article>
 
                 </div>
 
-            </div>
-
-
-            <!-- TOUR B -->
-
-            <div class="tour-card">
-
-                <img src="simizu.png">
-
-                <div class="tour-info">
-
-                    <h3>TOUR B</h3>
-
-                    <h4>Lagoon & Beach Escape</h4>
-
-                    <p>
-                        Enjoy a relaxing island adventure surrounded
-                        by beautiful lagoons and beaches.
-                    </p>
-
-                    <button>
-                        View Tour
-                    </button>
-
-                </div>
+                <p class="home-fee-note">
+                    Note: The price is ₱1,500 per person.
+                    Lagoon fees and environmental fees are excluded
+                    and must be paid separately.
+                </p>
 
             </div>
 
-
-            <!-- TOUR C -->
-
-            <div class="tour-card">
-
-                <img src="simizu.png">
-
-                <div class="tour-info">
-
-                    <h3>TOUR C</h3>
-
-                    <h4>El Nido Exploration</h4>
-
-                    <p>
-                        Discover the natural beauty of El Nido
-                        and its breathtaking scenery.
-                    </p>
-
-                    <button>
-                        View Tour
-                    </button>
-
-                </div>
-
-            </div>
-
-            <div class="tour-card">
-
-                <img src="simizu.png">
-
-                <div class="tour-info">
-
-                    <h3>TOUR D</h3>
-
-                    <h4>Palawan Adventure</h4>
-
-                    <p>
-                        Experience more of Palawan through an
-                        exciting and unforgettable adventure.
-                    </p>
-
-                    <button>
-                        View Tour
-                    </button>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="tourA-section" id="tourA">
-
-
-    <div class="section-heading">
-
-        <h1>TOUR A</h1>
-
-        <p>
-            Island Hopping Adventure
-        </p>
-
-    </div>
-
-
-    <div class="tour-container">
-
-
-        <!-- A1 -->
-
-        <div class="tour-card">
-
-            <img src="sevencommando.png">
-
-            <div class="tour-info">
-
-                <h3>Seven Commando Beach</h3>
-
-
-            </div>
-
-        </div>
-
-
-       
-
-        <div class="tour-card">
-
-            <img src="simizu.png">
-
-            <div class="tour-info">
-
-                <h3>Shimizu Island</h3>
-
-
-            </div>
-
-        </div>
-
-
-
-        <div class="tour-card">
-
-            <img src="simizu.png">
-
-            <div class="tour-info">
-
-                <h3>Big Lagoon</h3>
-
-        
-
-            </div>
-
-        </div>
-
-
-       
-
-        <div class="tour-card">
-
-            <img src="simizu.png">
-
-            <div class="tour-info">
-
-                <h3>Secret Lagoon</h3>
-
-
-            </div>
-
-        </div>
-
-
-        <div class="tour-card">
-
-            <img src="simizu.png">
-
-            <div class="tour-info">
-
-                <h3>TOUR A - 5</h3>
-
-                <h4>Corong Corong Beach</h4>
-
-                <p>P 1, 400.00</p>
-
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-</section>
-
-
-
-<section class="footer">
-
-    <footer>
-
-        <p>
-            @ 2026 Gelacso Travel & Tours.
-            All Rights Reserved.
-        </p>
-
-    </footer>
-
-</section>
-
-
-
-<script>
-
-function goToSection(sectionID) {
-
-    document.getElementById(sectionID).scrollIntoView({
-        behavior: "smooth"
-    });
-
-}
-
-</script>
-
+        </section>
+
+    </main>
+
+    <script>
+        function goToSection(sectionId) {
+            window.location.href = sectionId + ".html";
+        }
+    </script>
 
 </body>
-
 </html>

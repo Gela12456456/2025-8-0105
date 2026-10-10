@@ -200,6 +200,8 @@ nav {
 }
 
 
+
+
 .learn-page {
     min-height: 50vh;
     background-size: cover;
@@ -925,8 +927,6 @@ body {
 }
 
 
-
-TOUR B, C, D SECTIONS (kapareho ng itsura ng Tour A)
  
 .tourB-section,
 .tourC-section,
@@ -946,4 +946,563 @@ TOUR B, C, D SECTIONS (kapareho ng itsura ng Tour A)
 .tourC-section .tour-card img,
 .tourD-section .tour-card img {
     height: 200px;
+}
+
+
+.inclusions {
+    margin: 12px 0 15px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+ 
+.inclusions strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #4b9ac5;
+}
+ 
+.inclusions ul {
+    list-style: none;
+}
+ 
+.inclusions li::before {
+    content: "✓ ";
+    color: #20d0d7;
+    font-weight: bold;
+}
+ 
+
+ 
+.section-inclusions {
+    max-width: 500px;
+    margin: 0 auto 40px;
+    padding: 20px 25px;
+    background: rgba(0, 0, 0, 0.60);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+ 
+.section-inclusions h3 {
+    color: #20d0d7;
+    margin-bottom: 8px;
+}
+ 
+.section-inclusions ul {
+    list-style: none;
+}
+ 
+.section-inclusions li {
+    line-height: 1.8;
+}
+ 
+.section-inclusions li::before {
+    content: "✓ ";
+    color: #20d0d7;
+    font-weight: bold;
+}
+ 
+
+.exclusions {
+    margin: 0 0 15px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+ 
+.exclusions strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #d9534f;
+}
+ 
+.exclusions ul {
+    list-style: none;
+}
+ 
+.exclusions li::before {
+    content: "✗ ";
+    color: #d9534f;
+    font-weight: bold;
+}
+ 
+.section-inclusions h3.excl-title {
+    color: #ff7b72;
+    margin-top: 15px;
+}
+ 
+.section-inclusions li.excl::before {
+    content: "✗ ";
+    color: #ff7b72;
+}
+ 
+
+ 
+.price-placeholder {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+
+
+/* =========================================
+   HOME PAGE - AVAILABLE TOURS ONLY
+   Scoped styles to protect other pages
+========================================= */
+
+.home-section {
+    min-height: 100vh;
+    padding: 30px 35px 40px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("el nido.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tours wrapper */
+.home-section .tours {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+/* Page heading */
+.home-section .tours-title {
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto 44px;
+}
+
+.home-section .tours-title h2 {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    line-height: 1.2;
+}
+
+.home-section .tours-title p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Four tour cards */
+.home-section .tour-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 26px;
+    align-items: stretch;
+}
+
+/* Card */
+.home-section .tour-card {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    color: #111111;
+
+    border-radius: 17px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.home-section .tour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+}
+
+/* Temporary image placeholder */
+.home-section .tour-image-placeholder {
+    width: 100%;
+    height: 185px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8bc8df,
+            #4d9fbd,
+            #246477
+        );
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Card content */
+.home-section .tour-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.home-section .tour-info h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.home-section .tour-info h4 {
+    margin: 0 0 10px;
+    font-size: 19px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.home-section .tour-info > p {
+    margin: 0 0 15px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Price */
+.home-section .home-price {
+    margin: 0 0 17px;
+    padding: 12px;
+    background: #f0f8fc;
+    border-radius: 9px;
+    border: 1px solid #d9edf7;
+}
+
+.home-section .home-price span {
+    display: block;
+    color: #5b7180;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.home-section .home-price strong {
+    display: block;
+    color: #368bb9;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+/* Inclusions */
+.home-section .inclusions {
+    margin: 0 0 16px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.home-section .inclusions strong {
+    display: block;
+    color: #489bc6;
+    font-size: 13px;
+    margin-bottom: 5px;
+    letter-spacing: 0.4px;
+}
+
+.home-section .inclusions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home-section .inclusions li::before {
+    content: "✓ ";
+    color: #00aeb9;
+    font-weight: 700;
+}
+
+/* Exclusions */
+.home-section .exclusions {
+    margin: 0 0 18px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.home-section .exclusions strong {
+    display: block;
+    color: #e65353;
+    font-size: 13px;
+    margin-bottom: 5px;
+    letter-spacing: 0.4px;
+}
+
+.home-section .exclusions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home-section .exclusions li::before {
+    content: "✕ ";
+    color: #e65353;
+    font-weight: 700;
+}
+
+/* View Tour button */
+.home-section .tour-info button {
+    width: 100%;
+    margin-top: auto;
+    padding: 12px 15px;
+
+    background: #5ba8d6;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.home-section .tour-info button:hover {
+    background: #398cbd;
+}
+
+/* Fee reminder */
+.home-section .home-fee-note {
+    margin: 24px auto 0;
+    max-width: 850px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.7;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== HOME PAGE FIX ONLY ===== */
+
+.home-section {
+    min-height: 100vh;
+    padding: 30px 24px 40px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),
+        url("el nido.jpeg") center center / cover no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-section .tours {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.home-section .tours-title {
+    text-align: center;
+    color: #fff;
+    margin: 0 auto 42px;
+}
+
+.home-section .tours-title h2 {
+    font-size: 44px;
+    margin: 0 0 12px;
+    line-height: 1.2;
+}
+
+.home-section .tours-title p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.home-section .tour-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 26px;
+    align-items: stretch;
+}
+
+.home-section .tour-card {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fff;
+    color: #111;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.home-section .tour-card img,
+.home-section .tour-image-placeholder {
+    display: block;
+    width: 100%;
+    height: 183px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.home-section .tour-image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #b5dce9, #5ba8d6, #246477);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.home-section .tour-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.home-section .tour-info h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+}
+
+.home-section .tour-info h4 {
+    margin: 0 0 10px;
+    font-size: 19px;
+    line-height: 1.35;
+}
+
+.home-section .tour-info p {
+    margin: 0 0 15px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.home-section .home-price {
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background: #eef7fc;
+    border: 1px solid #d9eaf4;
+}
+
+.home-section .home-price span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #607786;
+}
+
+.home-section .home-price strong {
+    font-size: 25px;
+    color: #398fbe;
+}
+
+.home-section .inclusions,
+.home-section .exclusions {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.home-section .inclusions strong,
+.home-section .exclusions strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.home-section .inclusions strong {
+    color: #398fbe;
+}
+
+.home-section .exclusions strong {
+    color: #e65353;
+}
+
+.home-section .inclusions ul,
+.home-section .exclusions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home-section .inclusions li::before {
+    content: "✓ ";
+    color: #00aeb9;
+}
+
+.home-section .exclusions li::before {
+    content: "✕ ";
+    color: #e65353;
+}
+
+.home-section .tour-info button {
+    width: 100%;
+    margin-top: auto;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #5ba8d6;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home-section .tour-info button:hover {
+    background: #398cbd;
+}
+
+.home-section .home-fee-note {
+    margin: 24px auto 0;
+    max-width: 850px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+@media (max-width: 1100px) {
+    .home-section .tour-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .home-section {
+        padding: 28px 16px;
+    }
+
+    .home-section .tours-title h2 {
+        font-size: 31px;
+    }
+
+    .home-section .tours-title p {
+        font-size: 15px;
+    }
+
+    .home-section .tour-container {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .home-section .tour-card img,
+    .home-section .tour-image-placeholder {
+        height: 210px;
+    }
 }
