@@ -927,26 +927,6 @@ body {
 }
 
 
- 
-.tourB-section,
-.tourC-section,
-.tourD-section {
-    min-height: 100vh;
-    background-image:
-        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
-        url("el nido.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    padding: 80px 50px;
-}
- 
-.tourB-section .tour-card img,
-.tourC-section .tour-card img,
-.tourD-section .tour-card img {
-    height: 200px;
-}
 
 
 .inclusions {
@@ -1467,3 +1447,295 @@ body.el-nido-background .home-section {
 }
 
 
+
+/* =========================================
+   FIX: MATCH THE TOURS PAGE TO THE LANDING
+   ========================================= */
+
+/* Keep one continuous El Nido background */
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body.el-nido-background {
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.40),
+            rgba(0, 0, 0, 0.40)
+        ),
+        url("./el nido.jpeg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Make the tours section transparent.
+   The background now comes from the body. */
+body.el-nido-background .home-section {
+    min-height: 100vh;
+    padding: 90px 4% 45px;
+    box-sizing: border-box;
+    background: transparent !important;
+}
+
+/* Match the landing page's horizontal header */
+.home-header {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px 4%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+/* Logo and business name */
+.home-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 0;
+    text-decoration: none;
+}
+
+.home-logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.home-logo span {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation links */
+.home-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.home-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.home-nav a:hover {
+    color: #20d0d7;
+}
+
+/* Keep all four tour cards inside the screen */
+.home-section .tour-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.home-section .tour-card {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-section .tour-info {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .home-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 4%;
+    }
+
+    .home-logo span {
+        font-size: 24px;
+    }
+
+    .home-nav {
+        justify-content: center;
+    }
+
+    body.el-nido-background .home-section {
+        padding: 50px 4% 45px;
+    }
+
+    .home-section .tour-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .home-header {
+        gap: 15px;
+    }
+
+    .home-logo {
+        gap: 10px;
+    }
+
+    .home-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .home-logo span {
+        font-size: 17px;
+    }
+
+    .home-nav {
+        gap: 14px;
+    }
+
+    .home-nav a {
+        font-size: 12px;
+    }
+
+    body.el-nido-background .home-section {
+        padding: 30px 16px 40px;
+    }
+
+    .home-section .tour-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+}
+
+/* FIX TOUR CARD POSITION AND HEIGHT */
+
+body.el-nido-background .home-section {
+    min-height: 100vh;
+    padding: 25px 4% 35px;
+    box-sizing: border-box;
+    background: transparent !important;
+}
+
+/* Four cards in one row on desktop */
+.home-section .tour-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: start;
+    gap: 18px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Prevent unnecessarily tall cards */
+.home-section .tour-card {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Shorter tour image placeholders */
+.home-section .tour-image-placeholder {
+    height: 145px;
+    min-height: 145px;
+    flex-shrink: 0;
+}
+
+/* Reduce space inside each card */
+.home-section .tour-info {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.home-section .tour-info h3 {
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.home-section .tour-info h4 {
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+.home-section .tour-info p {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.home-section .home-price {
+    padding: 9px 10px;
+    margin-bottom: 10px;
+}
+
+.home-section .home-price strong {
+    font-size: 22px;
+}
+
+.home-section .inclusions,
+.home-section .exclusions {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.home-section .tour-info button {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+/* Tablet: two cards per row */
+@media (max-width: 1100px) {
+    body.el-nido-background .home-section {
+        padding: 25px 4% 35px;
+    }
+
+    .home-section .tour-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile: one card per row */
+@media (max-width: 600px) {
+    body.el-nido-background .home-section {
+        padding: 20px 16px 35px;
+    }
+
+    .home-section .tour-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+}
