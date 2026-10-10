@@ -1449,18 +1449,123 @@ body {
 }
 
 
-/* Shared El Nido background */
-
-.el-nido-background {
+body.el-nido-background {
     background-image:
         linear-gradient(
             rgba(0, 0, 0, 0.40),
             rgba(0, 0, 0, 0.40)
         ),
-        url("el nido.jpeg");
-
+        url("./el nido.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+body.el-nido-background .home-section {
+    background: transparent;
+}
+
+
+
+/* SHARED HEADER FOR ALL PAGES */
+
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 25px 5.5%;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.home-logo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.home-logo img {
+    width: 105px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.home-logo span {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: clamp(24px, 3.8vw, 62px);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.home-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.home-nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.home-nav a:hover {
+    color: #20d0d7;
+}
+
+/* Responsive header */
+@media (max-width: 1000px) {
+    .home-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .home-logo {
+        gap: 15px;
+    }
+
+    .home-logo img {
+        width: 70px;
+        height: 60px;
+    }
+
+    .home-logo span {
+        font-size: clamp(20px, 4vw, 36px);
+        white-space: normal;
+    }
+
+    .home-nav {
+        gap: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-header {
+        padding: 20px 15px;
+    }
+
+    .home-logo img {
+        width: 55px;
+        height: 50px;
+    }
+
+    .home-logo span {
+        font-size: 20px;
+    }
+
+    .home-nav a {
+        font-size: 13px;
+    }
 }
