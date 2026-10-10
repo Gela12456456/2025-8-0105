@@ -5,22 +5,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-
 .hero {
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.40);
 }
-
-
 
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 
 .logo img {
     width: 200px;
@@ -31,8 +25,6 @@
     font-size: 35px;
 }
 
-
-
 nav {
     height: 100px;
     display: flex;
@@ -41,7 +33,6 @@ nav {
     padding: 90px;
 }
 
-
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -49,20 +40,17 @@ nav {
     font-size: 15px;
 }
 
-
 .index {
     color: white;
     margin-left: 80px;
     margin-top: 170px;
 }
 
-
 .index h1 {
     font-family: 'Playfair Display', serif;
     font-size: 65px;
     line-height: 1.1;
 }
-
 
 .index span {
     color: #20d0d7;
@@ -227,8 +215,6 @@ nav {
     margin-top: 20px;
 }
 
-
-
 .contact-page {
     min-height: 50vh;
     background-size: cover;
@@ -266,9 +252,6 @@ nav {
     text-decoration: none;
 }
 
-
-
-
 .back-home {
     display: inline-block;
     margin-top: 20px;
@@ -287,7 +270,6 @@ nav {
     text-align: center;
 }
 
-
 footer {
     position: fixed;
     bottom: 0;
@@ -300,9 +282,6 @@ footer {
     font-size: 14px;
 }
 
-
-
-
 .admin-page {
 
     min-height: 80vh;
@@ -311,7 +290,6 @@ footer {
 
 }
 
-
 .admin-container {
 
     max-width: 1200px;
@@ -319,8 +297,6 @@ footer {
     margin: auto;
 
 }
-
-
 
 .admin-welcome {
 
@@ -355,7 +331,6 @@ footer {
 
 }
 
-
 .admin-welcome h1 {
 
     font-family: 'Playfair Display', serif;
@@ -366,20 +341,17 @@ footer {
 
 }
 
-
 .admin-welcome p {
 
     font-size: 14px;
 
 }
 
-
 .admin-plane {
 
     font-size: 55px;
 
 }
-
 
 .summary-container {
 
@@ -393,7 +365,6 @@ footer {
     margin-bottom: 20px;
 
 }
-
 
 .summary-card {
 
@@ -410,7 +381,6 @@ footer {
     gap: 15px;
 
 }
-
 
 .summary-icon {
 
@@ -432,7 +402,6 @@ footer {
 
 }
 
-
 .summary-card p {
 
     font-size: 10px;
@@ -443,7 +412,6 @@ footer {
 
 }
 
-
 .summary-card h2 {
 
     font-size: 30px;
@@ -452,9 +420,6 @@ footer {
 
 }
 
-
-
-/* DASHBOARD GRID */
 
 .dashboard-grid {
 
@@ -509,9 +474,6 @@ footer {
     margin-top: 4px;
 
 }
-
-
-
 
 
 .tour-row {
