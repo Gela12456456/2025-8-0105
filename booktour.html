@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
-<html lang="en">
 
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,184 +12,156 @@
 </head>
 
 <body>
-  <section class = "section1">
-    <header class="hero">
-   
 
-        <a href="home.html" class="home-logo">
-            <img src="gelacso.png" alt="Gelacso Travel & Tours Logo">
-            <span>GELACSO TRAVEL TOURS</span>
-        </a>
+    <!-- SAME STRUCTURE AS INDEX -->
+    <section class="section1">
 
-        <nav class="home-nav">
-            <a href="home.html">HOME</a>
-            <a href="contact.html">CONTACT US</a>
-            <a href="reviews.html">REVIEWS</a>
-        </nav>
+        <header class="hero">
 
+            <!-- LOGO AND NAVIGATION -->
+            <nav>
 
+                <div class="logo">
 
-<body class="el-nido-background">
+                    <img src="gelacso.png" alt="Gelacso Travel & Tours">
 
-        <div class="booking-container">
+                    <h2>
+                        GELACSO TRAVEL & TOURS
+                    </h2>
 
-            <h1>Book a Tour</h1>
-
-            <p class="booking-description">
-                Plan your next island adventure with us!
-            </p>
-
-            <form class="booking-form" id="bookingForm">
-
-                <label for="customerName">Full Name</label>
-                <input
-                    type="text"
-                    id="customerName"
-                    name="customerName"
-                    placeholder="Enter your full name"
-                    required
-                >
-
-                <label for="customerEmail">Email Address</label>
-                <input
-                    type="email"
-                    id="customerEmail"
-                    name="customerEmail"
-                    placeholder="Enter your email"
-                    required
-                >
-
-                <label for="tour">Select Tour Package</label>
-                <select id="tour" name="tour" required>
-                    <option value="A">Tour A - Island Hopping</option>
-                    <option value="B">Tour B - Island Hopping</option>
-                    <option value="C">Tour C - Island Hopping</option>
-                    <option value="D">Tour D - Island Hopping</option>
-                </select>
-
-                <label for="people">Number of People</label>
-                <input
-                    type="number"
-                    id="people"
-                    name="people"
-                    min="1"
-                    max="100"
-                    value="1"
-                    required
-                >
-
-                <label for="tourDate">Preferred Tour Date</label>
-                <input
-                    type="date"
-                    id="tourDate"
-                    name="tourDate"
-                    required
-                >
-
-                <div class="booking-total">
-                    <p>Price per person: ₱1,500</p>
-                    <p>Estimated Total</p>
-                    <strong id="totalPrice">₱1,500</strong>
                 </div>
 
-                <button type="submit" class="booking-submit">
-                    Submit Booking Request
-                </button>
+                <div class="nav-links">
 
-                <a href="home.html" class="booking-back">
-                    ← Back to Available Tours
-                </a>
+                    <a href="index.html">
+                        HOME
+                    </a>
 
-            </form>
+                    <a href="home.html">
+                        TOURS
+                    </a>
 
-        </div>
+                    <a href="contact.html">
+                        CONTACT US
+                    </a>
 
-    </main>
+                    <a href="admin.html">
+                        ADMIN
+                    </a>
 
-    <script>
-        const tourSelect = document.getElementById("tour");
-        const peopleInput = document.getElementById("people");
-        const dateInput = document.getElementById("tourDate");
-        const totalPrice = document.getElementById("totalPrice");
-        const bookingForm = document.getElementById("bookingForm");
+                </div>
 
-        const pricePerPerson = 1500;
+            </nav>
 
-        const urlParameters = new URLSearchParams(window.location.search);
-        const selectedTour = urlParameters.get("tour");
+            <!-- BOOKING CONTENT -->
+            <main>
 
-        if (["A", "B", "C", "D"].includes(selectedTour)) {
-            tourSelect.value = selectedTour;
-        }
+                <section class="booking-page">
 
-        const today = new Date();
-        const localToday = new Date(
-            today.getTime() - today.getTimezoneOffset() * 60000
-        ).toISOString().split("T")[0];
+                    <div class="booking-container">
 
-        dateInput.min = localToday;
+                        <h1>Book a Tour</h1>
 
-        function updateTotal() {
-            const people = Number(peopleInput.value);
+                        <p class="booking-description">
+                            Plan your next island adventure with us!
+                        </p>
 
-            if (people < 1 || people > 100 || !Number.isInteger(people)) {
-                totalPrice.textContent = "Please enter a valid number";
-                return;
-            }
+                        <form class="booking-form" id="bookingForm">
 
-            totalPrice.textContent = (people * pricePerPerson)
-                .toLocaleString("en-PH", {
-                    style: "currency",
-                    currency: "PHP",
-                    maximumFractionDigits: 0
-                });
-        }
+                            <label for="customerName">
+                                Full Name
+                            </label>
 
-        peopleInput.addEventListener("input", updateTotal);
-        updateTotal();
+                            <input
+                                type="text"
+                                id="customerName"
+                                name="customerName"
+                                placeholder="Enter your full name"
+                                required
+                            >
 
-        bookingForm.addEventListener("submit", function(event) {
-            event.preventDefault();
+                            <label for="customerEmail">
+                                Email Address
+                            </label>
 
-            const name = document.getElementById("customerName").value;
-            const email = document.getElementById("customerEmail").value;
-            const tour = tourSelect.value;
-            const people = Number(peopleInput.value);
-            const date = dateInput.value;
+                            <input
+                                type="email"
+                                id="customerEmail"
+                                name="customerEmail"
+                                placeholder="Enter your email"
+                                required
+                            >
 
-            if (people < 1 || people > 100 || !Number.isInteger(people)) {
-                alert("Please enter a valid number of people.");
-                return;
-            }
+                            <label for="tour">
+                                Select Tour Package
+                            </label>
 
-            if (!date || date < localToday) {
-                alert("Please select today or a future date.");
-                return;
-            }
+                            <select id="tour" name="tour" required>
+                                <option value="A">Tour A - Island Hopping</option>
+                                <option value="B">Tour B - Island Hopping</option>
+                                <option value="C">Tour C - Island Hopping</option>
+                                <option value="D">Tour D - Island Hopping</option>
+                            </select>
 
-            const total = people * pricePerPerson;
+                            <label for="people">
+                                Number of People
+                            </label>
 
-            alert(
-                "Booking Request Details\n\n" +
-                "Name: " + name + "\n" +
-                "Email: " + email + "\n" +
-                "Tour: " + tour + "\n" +
-                "Number of People: " + people + "\n" +
-                "Tour Date: " + date + "\n" +
-                "Estimated Total: ₱" + total.toLocaleString("en-PH") +
-                "\n\nThis is a demo. Your booking has not been sent."
-            );
-        });
-    </script>
+                            <input
+                                type="number"
+                                id="people"
+                                name="people"
+                                min="1"
+                                max="100"
+                                value="1"
+                                required
+                            >
 
-    </header>
- <footer>
+                            <label for="tourDate">
+                                Preferred Tour Date
+                            </label>
 
-        <p>
-            @ 2026 Gelacso Travel & Tours. All Rights Reserved.
-        </p>
+                            <input
+                                type="date"
+                                id="tourDate"
+                                name="tourDate"
+                                required
+                            >
 
-    </footer>
+                            <div class="booking-total">
+
+                                <p>Price per person: ₱1,500</p>
+
+                                <p>Estimated Total</p>
+
+                                <strong id="totalPrice">
+                                    ₱1,500
+                                </strong>
+
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="booking-submit"
+                            >
+                                Submit Booking Request
+                            </button>
+
+                            <a href="home.html" class="booking-back">
+                                ← Back to Available Tours
+                            </a>
+
+                        </form>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </header>
+
+    </section>
 </body>
-</html>
 
+</html>
