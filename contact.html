@@ -1,48 +1,105 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-
-
-<title>Log In - Gelacso Travel & Tours</title>
-
-<link rel="stylesheet" href="style.css">
-
-
+    <title>Contact Us - Gelacso Travel & Tours</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <section class = "section1">
-         <header class="hero">
+    <section class="section1">
+        <header class="hero">
 
+            <nav>
 
-              <div class="logo">
+                <div class="logo">
+                    <img src="gelacso.png">
+                    <h2>GELACSO TRAVEL & TOURS</h2>
+                </div>
 
-                <img src="gelacso.png">
+                <div class="nav-links">
+                    <a href="index.html">HOME</a>
+                    <a href="register.html">SIGN UP</a>
+                    <a href="contact.html">CONTACT US</a>
+                    <a href="reviews.html">REVIEWS</a>
+                    <a href="admin.html">ADMIN</a>
+                </div>
 
-                <h2>
-                    GELACSO TRAVEL & TOURS
-                </h2>
+            </nav>
 
-            </div>
+            <main class="contact-page">
 
-<div class="learn-page">
+                <section class="contact-info">
+                    <h1>GET IN TOUCH</h1>
 
-    <div class="learn-box">
+                    <p>
+                        Have questions about your next adventure?
+                        Contact Gelacso Travel & Tours and let us help
+                        you discover the beauty of El Nido, Palawan.
+                    </p>
+                </section>
 
-        <h1>HELLO PO TEAM RYZZA </h1>
+                <section class="contact-form-container">
 
-        <a class="back-btn" href="index.html">
-            BACK TO HOME
-        </a>
-</section>
-    </div>
+                    <h2>CONTACT US</h2>
 
-</div>
+                    <p>Fill out the form below to send us a message.</p>
 
-<footer> <p> @ 2026 Gelacso Travel & Tours. All Rights Reserved.</p> </footer>
+                    <form action="#" method="post">
+
+                        <label for="fullname">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                        <label for="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Enter the subject"
+                            required
+                        >
+
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+
+                        <button type="submit">SEND MESSAGE</button>
+
+                    </form>
+
+                </section>
+
+            </main>
+
+        </header>
+    </section>
+
+    <footer>
+        <p>
+            @ 2026 Gelacso Travel & Tours. All Rights Reserved.
+        </p>
+    </footer>
+
 </body>
-
 </html>
