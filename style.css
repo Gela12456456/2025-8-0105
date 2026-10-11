@@ -822,54 +822,6 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-.tour-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    display: block;
-}
-
-.tour-info {
-    padding: 20px;
-}
-
-.tour-info h3 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.tour-info h4 {
-    margin: 8px 0;
-    font-size: 18px;
-}
-
-.tour-info p {
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-.tour-info button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    background: #5ba8d6;
-    color: white;
-    font-weight: bold;
-}
-
-.tour-info button:hover {
-    background: #428dbb;
-}
-
-.tourA-section {
-    padding: 80px 50px;
-}
-
-.tourA-section .tour-card img {
-    height: 200px;
-}
 
 .section-heading {
     text-align: center;
@@ -1049,7 +1001,7 @@ body {
     font-weight: 700;
 }
 
-/* Exclusions */
+
 .home-section .exclusions {
     margin: 0 0 18px;
     font-size: 14px;
@@ -1476,10 +1428,8 @@ body.el-nido-background {
     background-attachment: fixed;
 }
 
-/* Make the tours section transparent.
-   The background now comes from the body. */
 body.el-nido-background .home-section {
-    min-height: 100vh;
+    min-height:auto;
     padding: 90px 4% 45px;
     box-sizing: border-box;
     background: transparent !important;
@@ -1687,7 +1637,7 @@ body.el-nido-background .home-section {
 .home-section .tour-info h4 {
     margin-bottom: 7px;
     font-size: 16px;
-    line-height: 1.35;
+    line-height: 2.5;
 }
 
 .home-section .tour-info p {
@@ -1717,7 +1667,6 @@ body.el-nido-background .home-section {
     padding: 10px;
 }
 
-/* Tablet: two cards per row */
 @media (max-width: 1100px) {
     body.el-nido-background .home-section {
         padding: 25px 4% 35px;
@@ -1728,7 +1677,7 @@ body.el-nido-background .home-section {
     }
 }
 
-/* Mobile: one card per row */
+
 @media (max-width: 600px) {
     body.el-nido-background .home-section {
         padding: 20px 16px 35px;
@@ -1741,3 +1690,40 @@ body.el-nido-background .home-section {
 }
 
 
+
+.home-header {
+    min-height: 120px;
+    padding: 15px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+body.el-nido-background .home-section {
+    min-height: auto;
+    padding: 25px 4% 20px;
+    background: transparent !important;
+    box-sizing: border-box;
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .home-section .tour-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .home-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .home-section .tour-container {
+        grid-template-columns: 1fr;
+    }
+}
