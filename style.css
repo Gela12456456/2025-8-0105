@@ -1641,3 +1641,57 @@ body.el-nido-background .home-section {
         padding: 22px;
     }
 }
+
+
+
+
+
+.contact-info .contact-socials {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-info .contact-socials a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 6px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    background: rgba(0, 25, 35, 0.7);
+    transition: 0.3s;
+}
+
+.contact-info .contact-socials a:hover {
+    color: #20d0d7;
+    border-color: #20d0d7;
+}
+
+.contact-info .contact-socials span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contact-info .social-f {
+    color: #8fc7ff;
+}
+
+.contact-info .social-email {
+    color: #20d0d7;
+}
+
+.contact-info .social-whatsapp {
+    color: #76e6a0;
+}
