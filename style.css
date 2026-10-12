@@ -70,7 +70,7 @@ nav {
 }
 
 .logo h2 {
-    color: rgb(0, 0, 0);
+    color: rgb(253, 253, 253);
     font-size: 30px;
 }
 
@@ -83,7 +83,7 @@ nav {
 }
 
 .nav-links a {
-    color: white;
+    color: rgb(205, 203, 203);
     text-decoration: none;
     font-size: 15px;
     white-space: nowrap;
