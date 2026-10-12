@@ -528,13 +528,19 @@ nav {
 
 .reviews-label {
     margin-bottom: 5px;
-     margin-top: 15px;
+    margin-top: 15px;
     color: #20d0d7;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 3px;
-} /*guest review may color font*/
+    transform: translateY(-10px);
+}/*guest review may color font*/
 
+.reviews-grid {
+    padding-bottom:50px;
+    position: relative;
+    z-index: 1;
+}
 
 .reviews-grid {
     display: grid;
