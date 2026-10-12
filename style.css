@@ -585,7 +585,6 @@ footer {
 
 
 
-/* Universal responsive settings */
 * {
     box-sizing: border-box;
 }
@@ -601,7 +600,7 @@ body {
     min-width: 0;
 }
 
-/* Responsive images and videos */
+
 img,
 video,
 iframe {
@@ -614,7 +613,6 @@ iframe {
         max-width: 100%;
     }
 }
-
 /* Mobile phones */
 @media screen and (max-width: 768px) {
     .container {
@@ -635,3 +633,5 @@ iframe {
         height: auto;
     }
 }
+
+
