@@ -814,7 +814,7 @@ body.el-nido-background .home-section {
 .home-section .home-fee-note {
     position: relative;
     z-index: 1;
-    max-width: 850px;
+    max-width: 750px;
     margin: 24px auto 20px;
     color: white;
     font-size: 13px;
@@ -1394,7 +1394,7 @@ footer {
 }
 
 .footer {
-    padding: 20px;
+    padding: 15px;
     background: #111;
     color: white;
     text-align: center;
