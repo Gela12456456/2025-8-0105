@@ -520,6 +520,11 @@ nav {
     padding: 0 25px;
 } /*size review box*/
 
+.reviews-heading {
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+} /*guest review font*/
 
 .reviews-label {
     margin-bottom: 10px;
@@ -527,7 +532,7 @@ nav {
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 3px;
-}
+} /*guest review may color font*/
 
 .reviews-heading h1 {
     margin-bottom: 12px;
