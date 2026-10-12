@@ -70,7 +70,7 @@ nav {
 }
 
 .logo h2 {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 30px;
 }
 
@@ -510,6 +510,7 @@ body.el-nido-background .home-section {
 }
 
 .tours-title h2 {
+    
     margin-bottom: 10px;
     font-size: 40px;
 }
@@ -980,89 +981,57 @@ body.el-nido-background .home-section {
     text-decoration: underline;
 }
 
-/* ========================================
-   ADMIN DASHBOARD
-======================================== */
+/* ADMIN DASHBOARD */
 
 .admin-page {
-    min-height: 80vh;
-    padding: 40px 60px;
+    background-color: #f4f6f8;
+    padding: 35px 20px;
 }
 
 .admin-container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
 }
 
 .admin-welcome {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 25px 35px;
-    background: rgba(0, 0, 0, 0.65);
-    border-radius: 15px;
-    color: white;
-}
-
-.admin-small {
-    color: #20d0d7;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 2px;
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-left: 5px solid #287c9e;
 }
 
 .admin-welcome h1 {
-    margin: 5px 0;
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    color: #234b60;
+    margin: 10px 0;
 }
 
 .admin-welcome p {
-    font-size: 14px;
-}
-
-.admin-plane {
-    font-size: 55px;
+    color: #666;
 }
 
 .summary-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .summary-card {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    background-color: white;
     padding: 20px;
-    background: white;
-    border-radius: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-.summary-icon {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    background: #20d0d7;
-    border-radius: 10px;
-    font-size: 22px;
-}
-
-.summary-card p {
-    color: #777;
-    font-size: 10px;
-    font-weight: bold;
+.summary-card h3 {
+    font-size: 15px;
+    color: #555;
 }
 
 .summary-card h2 {
-    color: #222;
-    font-size: 30px;
+    color: #287c9e;
+    margin-top: 10px;
+    font-size: 28px;
 }
 
 .dashboard-grid {
@@ -1073,159 +1042,92 @@ body.el-nido-background .home-section {
 }
 
 .dashboard-box {
-    padding: 25px;
-    background: rgba(0, 0, 0, 0.65);
-    border-radius: 15px;
-    color: white;
+    background-color: white;
+    padding: 22px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-.box-title {
-    display: flex;
-    justify-content: space-between;
+.dashboard-box h2 {
+    color: #234b60;
+    margin-bottom: 8px;
+}
+
+.dashboard-box > p {
+    color: #777;
     margin-bottom: 20px;
 }
 
-.box-title h2 {
-    font-size: 22px;
-}
-
-.box-title p {
-    margin-top: 4px;
-    color: #ccc;
-    font-size: 12px;
-}
-
-.tour-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 14px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-}
-
-.tour-name {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.tour-dot {
-    width: 9px;
-    height: 9px;
-    background: #20d0d7;
-    border-radius: 50%;
-}
-
-.tour-row h3 {
-    font-size: 14px;
-}
-
-.tour-row p {
-    margin-top: 3px;
-    color: #ccc;
-    font-size: 12px;
-}
-
-.tour-row strong {
-    color: #20d0d7;
-    font-size: 10px;
-}
-
-.quick-actions button {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 13px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    text-align: left;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.quick-actions button:hover {
-    background: #20d0d7;
-}
-
+.tour-row,
 .booking-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 13px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
 }
 
+.tour-row h3,
 .booking-row h3 {
-    font-size: 14px;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
 }
 
+.tour-row p,
 .booking-row p {
-    margin-top: 3px;
-    color: #bbb;
+    font-size: 13px;
+    color: #777;
+}
+
+.tour-row span,
+.tour-row strong {
+    color: #31834a;
     font-size: 12px;
 }
 
 .booking-row span {
-    color: #20d0d7;
-    font-size: 9px;
-    font-weight: bold;
-}
-
-.status-content {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.status-circle {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #20d0d7;
-    border-radius: 50%;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.status-content h3 {
-    font-size: 16px;
-}
-
-.status-content p {
-    margin-top: 4px;
-    color: #ccc;
     font-size: 12px;
+    color: #31834a;
 }
 
-.website-status a {
-    color: #20d0d7;
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.admin-back {
-    display: block;
-    margin-top: 10px;
+.quick-actions button {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    background-color: #287c9e;
     color: white;
-    font-size: 13px;
-    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quick-actions button:hover {
+    background-color: #205f78;
+}
+
+.online {
+    color: #31834a;
+    margin: 25px 0 15px;
+}
+
+.dashboard-box a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #287c9e;
     text-decoration: none;
 }
 
-.admin-back:hover {
-    color: #20d0d7;
+.dashboard-box a:hover {
+    text-decoration: underline;
 }
 
-.admin-active {
-    color: #20d0d7 !important;
-    font-weight: bold;
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #234b60;
+    color: white;
 }
 
 /* ========================================
