@@ -889,3 +889,86 @@ iframe {
     }
 }
 
+/* 6 cards = 3 columns */
+.home-section .tour-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* van photo placeholder */
+.van-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    background: #dfe9ef;
+    color: #7a8b95;
+    font-weight: 700;
+}
+
+/* From / Destination */
+.van-form {
+    margin-bottom: 14px;
+}
+
+.van-form label {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.van-form input {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* inland.html at van.html */
+.simple-page {
+    padding: 20px 5% 100px;
+}
+
+.simple-box {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    color: #123447;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.simple-box h1 {
+    margin-bottom: 10px;
+}
+
+.simple-box h2 {
+    margin: 20px 0 8px;
+    font-size: 18px;
+}
+
+.simple-box ul {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.simple-note {
+    margin-top: 14px;
+    color: #71808a;
+    font-size: 13px;
+}
+
+
+/* HOME: picture sa header lang, plain kulay sa tours */
+.home-section {
+    background: #bfdfff !important;
+    background-image: none !important;
+    padding: 30px 24px 100px;
+}
+
+/* para kita yung note sa baba sa light bg */
+.home-section .home-fee-note {
+    color: #123447;
+    text-shadow: none;
+}
