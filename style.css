@@ -635,3 +635,257 @@ iframe {
 }
 
 
+/* HOME: VIEW TOURS BUTTON */
+.view-tours-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 34px;
+    border-radius: 8px;
+    background: #20d0d7;
+    color: #062b32;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.view-tours-btn:hover {
+    background: #17b3b9;
+}
+
+/* TOUR DETAILS PAGE */
+.tour-details-page {
+    padding: 20px 5% 100px;
+}
+
+.tour-details {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.tour-details > img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+}
+
+.tour-details-info {
+    padding: 30px;
+    color: #123447;
+}
+
+.tour-details-info h1 {
+    margin: 4px 0 12px;
+    font-size: 28px;
+}
+
+.tour-details-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.details-lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 14px 0;
+    font-size: 14px;
+}
+
+.details-lists ul {
+    margin: 6px 0 0 18px;
+}
+
+.tour-details-info .details-note {
+    color: #71808a;
+    font-size: 12px;
+}
+
+.details-book {
+    width: 100%;
+    margin-top: 6px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #167d91;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.details-book:hover {
+    background: #105d70;
+}
+
+@media screen and (max-width: 768px) {
+    .tour-details {
+        grid-template-columns: 1fr;
+    }
+    .tour-details > img {
+        min-height: 220px;
+    }
+}
+
+/* ===== TOURS CARDS: ALIGNMENT + POLISH (home.html) ===== */
+
+.home-section {
+    padding: 10px 24px 80px;
+}
+
+/* pantay-pantay na taas ng cards */
+.home-section .tour-container {
+    align-items: stretch;
+    gap: 22px;
+}
+
+.home-section .tour-card {
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 40, 80, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home-section .tour-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0, 40, 80, 0.35);
+}
+
+.home-section .tour-card img,
+.home-section .tour-image-placeholder {
+    height: 190px;
+}
+
+.home-section .tour-info {
+    padding: 18px;
+    color: #123447;
+}
+
+/* TOUR A label + title */
+.home-section .tour-info h3 {
+    margin-bottom: 2px;
+    color: #167d91;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.home-section .tour-info h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.home-section .tour-info p {
+    margin-bottom: 14px;
+    color: #556670;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+/* PRICE: label sa kaliwa, presyo sa kanan */
+.home-section .home-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #eaf6fb;
+}
+
+.home-section .home-price span {
+    color: #5b7a89;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.home-section .home-price strong {
+    color: #167d91;
+    font-size: 20px;
+}
+
+/* INCLUSIONS / EXCLUSIONS */
+.home-section .inclusions,
+.home-section .exclusions {
+    margin-bottom: 12px;
+}
+
+.home-section .inclusions strong,
+.home-section .exclusions strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
+.home-section .inclusions strong {
+    color: #1f8f5f;
+}
+
+.home-section .exclusions strong {
+    color: #c0504d;
+}
+
+.home-section .inclusions ul,
+.home-section .exclusions ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.home-section .inclusions li,
+.home-section .exclusions li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 4px;v
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.home-section .inclusions li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #1f8f5f;
+    font-weight: bold;
+}
+
+.home-section .exclusions li::before {
+    content: "✕";
+    position: absolute;
+    left: 0;
+    color: #c0504d;
+    font-weight: bold;
+}
+
+/* button laging nasa baba */
+.home-section .tour-info button {
+    margin-top: auto;
+    padding: 12px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* mobile / tablet */
+@media screen and (max-width: 1100px) {
+    .home-section .tour-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home-section .tour-container {
+        grid-template-columns: 1fr;
+    }
+}
+

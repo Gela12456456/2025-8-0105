@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Details - Gelacso Travel & Tours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="section1">
+    <header class="hero">
+        <nav>
+            <div class="logo">
+                <img src="gelacso.png" alt="Gelacso Travel & Tours">
+                <h2>GELACSO TRAVEL & TOURS</h2>
+            </div>
+            <div class="nav-links">
+                <a href="home.html">HOME</a>
+                <a href="tours.html">TOURS</a>
+                <a href="contact.html">CONTACT US</a>
+                <a href="reviews.html">REVIEWS</a>
+                <a href="admin.html">ADMIN</a>
+            </div>
+        </nav>
+
+        <main>
+            <section class="tour-details-page">
+                <div class="tour-details" id="tourDetails"></div>
+            </section>
+        </main>
+    </header>
+    </section>
+
+    <footer>
+        <p>@ 2026 Gelacso Travel & Tours. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Dito lang nakalagay yung info ng tours. Dagdagan lang kapag may bagong tour.
+        const tours = {
+            A: { image: "biglagoon.png", text: "Explore beautiful islands, crystal-clear waters, and amazing beaches with Tour A." },
+            B: { image: "snake.png",     text: "Discover scenic islands, hidden beaches, and beautiful coastal views with Tour B." },
+            C: { image: "shrine.png",    text: "Enjoy a memorable island adventure surrounded by the natural beauty of El Nido." },
+            D: { image: "d.jpg",         text: "Experience the peaceful waters and tropical scenery of El Nido with Tour D." }
+        };
+
+        const id = (new URLSearchParams(window.location.search).get("tour") || "A").toUpperCase();
+        const t = tours[id];
+        const box = document.getElementById("tourDetails");
+
+        if (!t) {
+            box.innerHTML = '<div class="tour-details-info"><h1>Tour not found</h1><a class="booking-back" href="tours.html">← Back to Tours</a></div>';
+        } else {
+            document.title = "Tour " + id + " - Gelacso Travel & Tours";
+            box.innerHTML =
+                '<img src="' + t.image + '" alt="Tour ' + id + ' Island Hopping in El Nido">' +
+                '<div class="tour-details-info">' +
+                    '<h3>TOUR ' + id + '</h3>' +
+                    '<h1>Island Hopping Adventure</h1>' +
+                    '<p>' + t.text + '</p>' +
+                    '<div class="home-price"><span>PRICE PER PERSON</span><strong>₱1,500</strong></div>' +
+                    '<div class="details-lists">' +
+                        '<div class="inclusions"><strong>INCLUSIONS</strong><ul><li>Lunch</li><li>Licensed Boat</li><li>Tour Guide</li></ul></div>' +
+                        '<div class="exclusions"><strong>EXCLUSIONS</strong><ul><li>Lagoon Fee</li><li>Environmental Fee</li></ul></div>' +
+                    '</div>' +
+                    '<p class="details-note">Lagoon fees and environmental fees are not included in the package price and must be paid separately.</p>' +
+                    '<button class="details-book" onclick="window.location.href=\'booktour.html?tour=' + id + '\'">Book Tour</button>' +
+                    '<a class="booking-back" href="tours.html">← Back to Tours</a>' +
+                '</div>';
+        }
+    </script>
+</body>
+</html>
