@@ -430,7 +430,106 @@ nav {
     text-align: center;
 } /* note about lagoon fee sa baba */
  
-
+/* TOUR DETAILS PAGE (tourA-D) */
+.tour-details-page { padding: 20px 5% 100px; } /* space ng page */
+ 
+.tour-details {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+} /* puting box ng tour details, pic kaliwa info kanan */
+ 
+.tour-details > img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+} /* pic sa tour details */
+ 
+.tour-details-info {
+    padding: 30px;
+    color: #123447;
+} /* text side ng box */
+ 
+.tour-details-info h1 {
+    margin: 4px 0 12px;
+    font-size: 28px;
+} /* title ng tour */
+ 
+.tour-details-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+} /* description */
+ 
+.tour-details-info .details-note {
+    color: #71808a;
+    font-size: 12px;
+} /* maliit na note about fees */
+ 
+.details-lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 14px 0;
+    font-size: 14px;
+} /* inclusions at exclusions magkatabi */
+ 
+.details-lists ul { margin: 6px 0 0 18px; } /* space ng bullets */
+ 
+.details-book {
+    display: block;
+    margin-top: 6px;
+    padding: 14px;
+    border-radius: 8px;
+    background: #167d91;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+} /* Book Tour button */
+ 
+.details-book:hover { background: #105d70; } /* dumidilim pag hinover */
+ 
+.islands {
+    max-width: 1250px;
+    margin: 25px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+} /* puting box ng islands included */
+ 
+.islands h2 {
+    color: #0b3a4a;
+    margin-bottom: 15px;
+} /* title ng islands */
+ 
+.islands-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+} /* 5 columns ng island pics */
+ 
+.island-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+} /* pic ng island */
+ 
+.island-card p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+} /* pangalan ng island */
+ 
 
 .home-section .tour-card img,
 .home-section .tour-image-placeholder {
