@@ -7,7 +7,7 @@
 }
 
 
-img, video, iframe { max-width: 100%; }
+img, video, iframe { max-width: 100%; } /*para di lumampas pic sa sceen*/
 
 
 .section1 {
@@ -31,18 +31,20 @@ nav {
     padding: 15px 5%;
     gap: 25px;
 }
+ 
 .logo {
     display: flex;
     align-items: center;
     gap: 20px;
     min-width: 0;
     color: white;
-}
+} /* logo + pangalan ng company */
  
 .logo img {
     width: 130px;
     flex-shrink: 0;
-}
+} /* laki ng logo */
+ 
 
 .nav-links {
     display: flex;
@@ -69,26 +71,27 @@ nav {
     color: white;
     margin: 140px 0 0 5%;
     padding-bottom: 120px;
-} 
-
+} /* lalagyan ng text sa landing at home */
+ 
 .index h1 {
     font-family: 'Playfair Display', serif;
     font-size: 65px;
     line-height: 1.1;
-}  /*SIZE NG EL NIDO KEME*/
-
+} /* malaking title (EXPLORE / WELCOME TO) */
+ 
 .index span {
     color: #20d0d7;
     font-family: 'Playfair Display', serif;
-} /*COLOR NG el nido palawan*/
-
+} /* teal na text (El Nido, Palawan) */
+ 
 .index p {
     width: 500px;
     max-width: 90%;
     margin-top: 20px;
     font-size: 18px;
     line-height: 1.6;
-} /* parangraph sa landing*/
+} /* paragraph sa ilalim ng title */
+ 
 
 /* LOGIN PAGE */
 
