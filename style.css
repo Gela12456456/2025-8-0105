@@ -124,6 +124,10 @@ nav {
     text-align: center;
     color: white;
 } /* itim na box ng login at register */
+
+.login-box { padding: 40px; border-radius: 10px; } /* login lang yung ganitong laki */
+.register-box { padding: 20px; border-radius: 15px; } /* register lang */
+ 
  
 .login-box h1 {
     margin-bottom: 30px;
