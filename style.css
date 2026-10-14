@@ -298,6 +298,22 @@ nav {
 } /* tumataas ng konti pag hinover */
  
 
+.home-section .tour-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+} /* para pantay yung taas ng mga card */
+ 
+.home-section .tour-card img,
+.home-section .tour-image-placeholder {
+    display: block;
+    width: 100%;
+    height: 190px;
+    flex-shrink: 0;
+    object-fit: cover;
+} /* pic sa taas ng card */
+ 
+
 
 
 
