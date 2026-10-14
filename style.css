@@ -31,7 +31,6 @@ nav {
     padding: 15px 5%;
     gap: 25px;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -39,11 +38,9 @@ nav {
     min-width: 0;
     color: white;
 }
-
+ 
 .logo img {
     width: 130px;
-    height: auto;
-    object-fit: contain;
     flex-shrink: 0;
 }
 
