@@ -240,7 +240,6 @@ nav {
     outline: none;
 } /* box sa mismong paglagay ng info */
 
-
 .contact-form-container button {
     margin-top: 12px;
     padding: 13px;
@@ -253,8 +252,6 @@ nav {
     cursor: pointer;
     transition: background 0.3s;
 }  /* send message button */
-
-
 
 .contact-info .contact-socials a {
     display: inline-flex;
@@ -271,38 +268,38 @@ nav {
 }  /* bg ng contact info */
 
 
-/*HOME TOURS*/
-
-
+/* TOURS PAGE (tours.html) */
+.home-section {
+    padding: 30px 24px 100px;
+    background: #bfdfff;
+} /* light blue bg ng tours page */
+ 
 .home-section .tour-container {
     width: 100%;
     max-width: 1500px;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    align-items: start;
-    gap: 18px;
     margin: 0 auto;
-}/* para organize yung tour card*/
-
-
-
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 22px;
+} /* grid ng mga tour card (3 columns) */
+ 
 .tour-card {
-    width: 250px;
     overflow: hidden;
     background: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}  /*white background sa mga inlcusion and exclusion*/
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 40, 80, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+} /* puting card ng bawat tour */
+ 
+.tour-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0, 40, 80, 0.35);
+} /* tumataas ng konti pag hinover */
+ 
 
-.home-section .tour-card {
-    width: 100%;
-    min-width: 0;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 12px;
-} /*size ng  tour card*/
+
+
 
 .home-section .tour-card img,
 .home-section .tour-image-placeholder {
