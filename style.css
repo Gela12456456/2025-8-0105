@@ -135,15 +135,19 @@ nav {
     font-family: 'Playfair Display', serif;
 } /*font log in and space*/
 
-.login-box input {
-    width: 100%;
+.login-box input,
+.register-box input{
+
+  width: 100%;
     padding: 15px;
     margin: 10px 0;
     border: none;
     border-radius: 5px;
-}/* box ng input*/
+}/* box ng input lagayan ng username, password etc */
 
-.login-box button {
+
+.login-box button,
+.register-box button{
     width: 100%;
     padding: 15px;
     margin-top: 15px;
@@ -166,53 +170,12 @@ nav {
     margin-top: 20px;
 }  /* space ng back button*/
 
-/* REGISTER PAGE */
-
-.register-page {
-    min-height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-} /*space ng box sa regsiter*/
-
-.register-box {
-    width: 400px;
-    max-width: 100%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 15px;
-    text-align: center;
-    color: white;
-} /* box sa regsiter*/
-
-
-.register-box input {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}  /* box input*/
-
-.register-box button {
-    width: 100%;
-    padding: 15px;
-    margin-top: 15px;
-    border: none;
-    border-radius: 5px;
-    background: #20d0d7;
-    cursor: pointer;
-    font-weight: bold;
-} /*color ng sign up button*/
-
 
 .already-account {
     margin-top: 15px;
     font-size: 14px;
     color: white;
 } /*space ng already keme*/
-
 
 
 /* CONTACT PAGE */
