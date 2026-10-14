@@ -6,13 +6,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+img, video, iframe { max-width: 100%; }
+ 
+
 .section1,
 .home-section,
 .tourA-section {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("el nido.jpeg");
-    background-size: cover;
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("el nido.jpeg");background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
