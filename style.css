@@ -106,24 +106,25 @@ nav {
  
 /* LOGIN PAGE */
 
-.login-page {
+.login-page,
+.register-page {
     min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-} /* posisyon ng log in*/
+} /* pang-center ng login at register box */
+ 
 
-.login-box {
+.login-box,
+.register-box {
     width: 400px;
     max-width: 100%;
-    padding: 40px;
     background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
     text-align: center;
     color: white;
-} /*box sa log in*/
-
+} /* itim na box ng login at register */
+ 
 .login-box h1 {
     margin-bottom: 30px;
     font-size: 40px;
