@@ -15,25 +15,11 @@ img, video, iframe { max-width: 100%; }
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("el nido.jpeg") center / cover;
 }
  
-
-.section1,
-.home-section,
-.tourA-section {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("el nido.jpeg");background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.section1,
-.hero,
-.tourA-section {
-    min-height: 100vh;
-}
-
 .hero {
+    min-height: 100vh;
     background: rgba(0, 0, 0, 0.4);
 }
+ 
 
 /* NAVIGATION*/
 
