@@ -315,6 +315,121 @@ nav {
  
 
 
+.home-section .tour-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    color: #123447;
+} /* text sa loob ng card */
+ 
+.home-section .tour-info h3 {
+    margin-bottom: 2px;
+    color: #167d91;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+} /* TOUR A label */
+ 
+.home-section .tour-info h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25;
+} /* Island Hopping Adventure */
+ 
+.home-section .tour-info p {
+    margin-bottom: 14px;
+    color: #556670;
+    font-size: 13px;
+    line-height: 1.55;
+} /* description ng tour */
+ 
+.home-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #eaf6fb;
+} /* box ng price, label sa kaliwa presyo sa kanan */
+ 
+.home-price span {
+    color: #5b7a89;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+} /* PRICE PER PERSON text */
+ 
+.home-price strong {
+    color: #167d91;
+    font-size: 20px;
+} /* yung ₱1,500 */
+ 
+.inclusions,
+.exclusions { margin-bottom: 12px; } /* space sa baba ng inclusions/exclusions */
+ 
+.inclusions strong,
+.exclusions strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+} /* INCLUSIONS / EXCLUSIONS na title */
+ 
+.inclusions strong { color: #1f8f5f; } /* green */
+.exclusions strong { color: #c0504d; } /* red */
+ 
+.inclusions ul,
+.exclusions ul { list-style: none; } /* tanggal bullets */
+ 
+.inclusions li,
+.exclusions li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    line-height: 1.4;
+} /* bawat item sa list */
+ 
+.inclusions li::before,
+.exclusions li::before {
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+} /* pwesto ng ✓ at ✕ */
+ 
+.inclusions li::before { content: "✓"; color: #1f8f5f; } /* check mark */
+.exclusions li::before { content: "✕"; color: #c0504d; } /* x mark */
+ 
+.tour-info button {
+    width: 100%;
+    margin-top: auto;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #5ba8d6;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+} /* View Tour button, laging nasa baba ng card */
+ 
+.tour-info button:hover { background: #428dbb; } /* dumidilim pag hinover */
+ 
+.home-section .home-fee-note {
+    max-width: 750px;
+    margin: 24px auto 20px;
+    color: #123447;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+} /* note about lagoon fee sa baba */
+ 
 
 
 .home-section .tour-card img,
